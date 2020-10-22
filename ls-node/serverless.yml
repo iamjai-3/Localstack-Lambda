@@ -1,0 +1,25 @@
+service: ls-node
+
+frameworkVersion: '2'
+
+plugins:
+  - serverless-plugin-typescript
+  - serverless-localstack
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: ${opt:stage, 'development'}
+  region: us-east-1
+  profile: iamjai
+
+
+functions:
+  hello:
+    handler: handler.hello
+
+
+custom:
+  localstack:
+    stages:
+      - local

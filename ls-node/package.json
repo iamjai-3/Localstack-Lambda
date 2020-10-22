@@ -1,0 +1,17 @@
+{
+  "name": "ls-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serverless-localstack": "^0.4.28",
+    "serverless-plugin-typescript": "^1.1.9",
+    "typescript": "^4.0.3"
+  }
+}
